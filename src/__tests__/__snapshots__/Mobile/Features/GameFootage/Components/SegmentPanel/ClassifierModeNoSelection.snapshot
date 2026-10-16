@@ -309,6 +309,215 @@
             </table>
           </div>
         </div>
+        <div
+          class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiAccordion-root MuiAccordion-rounded Mui-expanded css-16myozs-MuiPaper-root-MuiAccordion-root"
+        >
+          <div
+            aria-controls="csv-preview-content"
+            aria-expanded="true"
+            class="MuiButtonBase-root MuiAccordionSummary-root Mui-expanded css-1pvvkxv-MuiButtonBase-root-MuiAccordionSummary-root"
+            id="csv-preview-header"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="MuiAccordionSummary-content Mui-expanded css-13e9j4t-MuiAccordionSummary-content"
+            >
+              <h3
+                class="MuiTypography-root MuiTypography-h6 css-okrrt8-MuiTypography-root"
+              >
+                csvPreviewTitle
+              </h3>
+            </div>
+            <div
+              class="MuiAccordionSummary-expandIconWrapper Mui-expanded css-yw020d-MuiAccordionSummary-expandIconWrapper"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ExpandMoreIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-pwcg7p-MuiCollapse-root"
+            style="min-height: 0px;"
+          >
+            <div
+              class="MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper"
+            >
+              <div
+                class="MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner"
+              >
+                <div
+                  aria-labelledby="csv-preview-header"
+                  class="MuiAccordion-region"
+                  id="csv-preview-content"
+                  role="region"
+                >
+                  <div
+                    class="MuiAccordionDetails-root css-kz0teh-MuiAccordionDetails-root"
+                    id="csv-preview-content"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 css-7x1md9-MuiTypography-root"
+                    >
+                      csvPreviewDescription
+                    </p>
+                    <div
+                      aria-label="csvPreviewTitle"
+                      class="MuiTableContainer-root css-3z3xu-MuiTableContainer-root"
+                      role="region"
+                      tabindex="0"
+                    >
+                      <table
+                        aria-label="csvPreviewTitle"
+                        class="MuiTable-root MuiTable-stickyHeader css-i5ub74-MuiTable-root"
+                      >
+                        <thead
+                          class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
+                        >
+                          <tr
+                            class="MuiTableRow-root MuiTableRow-head css-1q64kqv-MuiTableRow-root"
+                          >
+                            <th
+                              class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-11lbncg-MuiTableCell-root"
+                              scope="col"
+                            >
+                              clipName
+                            </th>
+                            <th
+                              class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-11lbncg-MuiTableCell-root"
+                              scope="col"
+                            >
+                              id
+                            </th>
+                            <th
+                              class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-11lbncg-MuiTableCell-root"
+                              scope="col"
+                            >
+                              start
+                            </th>
+                            <th
+                              class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-11lbncg-MuiTableCell-root"
+                              scope="col"
+                            >
+                              end
+                            </th>
+                            <th
+                              class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-11lbncg-MuiTableCell-root"
+                              scope="col"
+                            >
+                              duration
+                            </th>
+                            <th
+                              class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-11lbncg-MuiTableCell-root"
+                              scope="col"
+                            >
+                              playType
+                            </th>
+                            <th
+                              class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-11lbncg-MuiTableCell-root"
+                              scope="col"
+                            >
+                              tags
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody
+                          class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
+                        >
+                          <tr
+                            class="MuiTableRow-root css-1q64kqv-MuiTableRow-root"
+                          >
+                            <td
+                              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1czyxqt-MuiTableCell-root"
+                            >
+                              segment_001
+                            </td>
+                            <td
+                              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1czyxqt-MuiTableCell-root"
+                            >
+                              1
+                            </td>
+                            <td
+                              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1czyxqt-MuiTableCell-root"
+                            >
+                              10
+                            </td>
+                            <td
+                              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1czyxqt-MuiTableCell-root"
+                            >
+                              25
+                            </td>
+                            <td
+                              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1czyxqt-MuiTableCell-root"
+                            >
+                              15
+                            </td>
+                            <td
+                              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1czyxqt-MuiTableCell-root"
+                            >
+                              Pass
+                            </td>
+                            <td
+                              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1czyxqt-MuiTableCell-root"
+                            >
+                              Red Zone
+                            </td>
+                          </tr>
+                          <tr
+                            class="MuiTableRow-root css-1q64kqv-MuiTableRow-root"
+                          >
+                            <td
+                              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1czyxqt-MuiTableCell-root"
+                            >
+                              segment_002
+                            </td>
+                            <td
+                              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1czyxqt-MuiTableCell-root"
+                            >
+                              2
+                            </td>
+                            <td
+                              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1czyxqt-MuiTableCell-root"
+                            >
+                              42
+                            </td>
+                            <td
+                              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1czyxqt-MuiTableCell-root"
+                            >
+                              83
+                            </td>
+                            <td
+                              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1czyxqt-MuiTableCell-root"
+                            >
+                              41
+                            </td>
+                            <td
+                              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1czyxqt-MuiTableCell-root"
+                            >
+                              Run
+                            </td>
+                            <td
+                              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1czyxqt-MuiTableCell-root"
+                            />
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

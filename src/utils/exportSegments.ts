@@ -1,6 +1,6 @@
 import { type Segment } from '../redux/SegmentSlice';
 
-const CSV_HEADER = 'clipName,id,start,end,duration,playType,tags';
+export const CSV_COLUMNS = ['clipName', 'id', 'start', 'end', 'duration', 'playType', 'tags'] as const;
 
 /** Returns the canonical zero-padded segment label for a 0-based index, e.g. `segment_001`. */
 export function formatSegmentId(index: number): string {
@@ -19,16 +19,27 @@ function csvField(value: string): string {
   return value;
 }
 
+/**
+ * Single source of truth for the CSV body: raw (unescaped) cell values, one
+ * array per segment, ordered as {@link CSV_COLUMNS}. Used by both the download
+ * and the on-screen preview so they cannot drift apart.
+ */
+export function segmentsToCsvRows(segments: Segment[]): string[][] {
+  return segments.map((s, i) => [
+    formatSegmentId(i),
+    s.id,
+    String(s.start),
+    String(s.end),
+    String(s.duration),
+    s.playType ?? '',
+    (s.tags ?? []).join('|'),
+  ]);
+}
+
 export function segmentsToCsv(segments: Segment[]): string {
-  const rows = segments.map((s, i) => {
-    const label = formatSegmentId(i);
-    const tags = csvField((s.tags ?? []).join('|'));
-    const playType = csvField(s.playType ?? '');
+  const rows = segmentsToCsvRows(segments).map((row) => row.map(csvField).join(','));
 
-    return `${label},${s.id},${s.start},${s.end},${s.duration},${playType},${tags}`;
-  });
-
-  return [CSV_HEADER, ...rows].join('\n');
+  return [CSV_COLUMNS.join(','), ...rows].join('\n');
 }
 
 export function segmentsToJson(segments: Segment[]): string {

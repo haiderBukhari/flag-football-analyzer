@@ -17,6 +17,7 @@ import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { type PlayDown, type PlaySide, type Segment } from '../../../../redux/SegmentSlice';
+import CsvPreview from '../CsvPreview';
 import PlayClassifier from '../PlayClassifier';
 import SegmentTable from '../SegmentTable';
 
@@ -219,6 +220,8 @@ export default function SegmentPanel(props: SegmentPanelProps) {
             onDelete={onDelete}
             onSegmentClick={onSegmentClick}
           />
+
+          <CsvPreview segments={segments} />
         </Stack>
       </CardContent>
     </Card>
